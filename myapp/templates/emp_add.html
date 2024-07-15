@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block title_block%}
+
+<title>employee-create</title>
+
+{%endblock%}
+
+{%block main_block%}
+
+<div class="container">
+    <form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit">add</button>
+    </form>
+</div>
+
+{%endblock%}
